@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	.capa{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: rgb(70, 70, 70);
+		z-index: -1;
+		top: 0;left: 0;
+	}
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu, .logo{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.logo h1{
+		color: #fff;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	.container .menu{
+		float: right;
+		line-height: 100px;
+	}
+	.container .menu a{
+		display: inline-block;
+		padding: 15px;
+		line-height: normal;
+		text-decoration: none;
+		color: #fff;
+		transition: all 0.3s ease;
+		border-bottom: 2px solid transparent;
+		font-size: 15px;
+		margin-right: 5px;
+	}
+	.container .menu a:hover{
+		border-bottom: 2px solid #EEC879;
+		padding-bottom: 5px;
+	}
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	span{
+		color: #EEC879;
+		font-weight: 400;
+		font-size: 22px;
+		margin-left: 10px;
+	}
+	nav ul li {
+		list-style-type: none;
+		display: inline-block;
+		padding: 10px 20px;
+	}
+	nav ul li a{
+		color: #EEC879;
+		text-decoration: none;
+		font-weight: 400;
+	}
+	nav ul li a:hover{
+		color: #EEC879;
+		transition: .3s;
+		
+	}
+
+	 * {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	body{
+		background: #f5f5f5;
+	}
+	
+	.container-all{
+		width: 100%;
+		max-width: 1000px;
+		margin: auto;
+		padding: 60px;
+		background: #fff0f0;
+		margin-top: 100px;
+		border-top: 6px solid #fff0f0;
+	}
+	
+	.title{
+		font-size: 40px;
+		margin-bottom: 60px;
+	}
+	
+	.container-all img{
+		width: 300px;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	
+	.container-all p{
+		font-size: 18px;
+		font-weight: 300;
+		margin-top: 20px;
+		margin-inline-end: auto;
+	}
+	div.centro{
+		margin-top: 250px;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+		color: white;
+		font-weight: 400;
+		font-size: 22px;
+		
+		}
+	span2{
+		color: #EEC879;
+		}
+html, body {
+    position: relative;
+    min-height: 100vh;
+    background-color: #fff0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.player {
+    position: relative;
+}
+
+.player .info {
+    position: absolute;
+    height: 60px;
+    top: 0;
+    opacity: 0;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 15px 5px 110px;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.player .info .artist,
+.player .info .name {
+    display: block;
+}
+
+.player .info .artist {
+    color: #222;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.player .info .name {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.player .info .progress-bar {
+    background-color: #ddd;
+    height: 2px;
+    width: 100%;
+    position: relative;
+}
+
+.player .info .progress-bar .bar {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #1eabff;
+    width: 10%;
+    transition: all 0.2s ease;
+}
+
+.player .info.active {
+    top: -60px;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.player .control-panel {
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 300px;
+    height: 80px;
+    z-index: 5;
+    box-shadow: 0 20px 20px 5px rgba(183, 212, 245, 0.3);
+}
+
+.player .control-panel .album-art {
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 0 20px 20px 5px rgba(0, 0, 0, 0);
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.player .control-panel .album-art::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+}
+
+.player .control-panel.active .album-art {
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0).2;
+    transform: scale(1.2);
+    transition: all o.5s ease;
+}
+
+.player .control-panel .controls {
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    padding: 0 15px
+}
+
+.player .control-panel .controls .prev,
+.player .control-panel .controls .play,
+.player .control-panel .controls .next {
+    width: 55px;
+    height: auto;
+    border-radius: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    margin: 5px 0;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.player .control-panel .controls .prev:hover,
+.player .control-panel .controls .play:hover,
+.player .control-panel .controls .next:hover {
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+}
+
+.player .control-panel .controls .play {
+    background-image: url(../img/play.svg);
+}
+.player .control-panel.active .controls .play {
+    background-image: url(../img/pause.svg);
+}
+.form_btn{
+	margin: 1rem;
+}
+.btn_audio{
+	padding: 2rem;
+	font-size: 20px;
+	border-radius: 1rem;
+	border: 1px solid #f5f5f5;
+	background: tomato;
+	color: #f5f5f5;
+	font-weight: bold;
+	font-family: 'Courier New', Courier, monospace;
+	letter-spacing: 2;
+	cursor: pointer;
+
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividades</title>
+    <link rel="stylesheet" href="../css/actividades.css">
+</head>
+<body>
+    
+    <header>
+        <h1> QUIZ GAME</h1>
+    </header>
+    <header2 class="header">
+		<div class="container">
+			<nav class="menu">
+				<a href="../index.html">Inicio</a>
+			</nav>
+		</div>
+	</header2>
+    <div class="container">
+        <section id="p0">
+            <h3>¿Cual es la cancion mas famosa de Madonna?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Tiger
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0"onclick="respuesta(0,this)"> Like A Virgen
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> la Isla Bonita
+            </label>
+        </section>
+
+        <section id="p1">
+            <h3>¿En que año nacio Tupac?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> 1971
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> 1975
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> 1970
+            </label>
+         </section>
+
+            <section id="p2">
+                <h3>¿Cual es el verdadero nombre de Eminem?</h3>
+                <label>
+                    <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Joshep
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Marshall
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> Martin
+                </label>
+            </section>
+
+            <section id="p3">
+                <h3>¿Cual es la cancion mas famosa de Michael Jackson?</h3>
+                <label>
+                    <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> Thriller
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> Billie Jean
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Black and Whith
+                </label>
+            </section>
+
+            <section id="p4">
+                <h3>¿Cual es la cancion mas famosa de Britney?</h3>
+                <label>
+                    <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> Toxic
+                </label>
+                <label>
+                    <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Work Bitch
+                </label>
+                <label>
+                    <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> Opss I Did Again
+                </label>
+            </section>
+            <button onclick="corregir()"> CORREGIR </button>
+            <h2> Cantidad correcta: <span id="resultado"></span></h2>
+    </div>
+    <script src="../js/actividades.js"></script>
+</body>
+</html>
